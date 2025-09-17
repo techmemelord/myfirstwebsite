@@ -30,35 +30,82 @@
   that displays on the web page.
   -->
   <body style="background-color: white;">
-    <header style="background-color: pink;">
+    <header style="background-color: pink; border-radius: 5px;">
+      <!-- 
+      h1 is the largest type of heading and is the main 
+      heading for a website.
+
+      It is an example of a block element because it 
+      spans the whole width of the website by default.
+    -->
     <h1 style="font-style: italic;"><b>Hello! My name is Oliver! This is my first website!</b></h1>
-    <!--
-    The paragraph tag is a block element
-    which stretches the text as far
-    to the right as possible
+      <!-- 
+      This is a paragraph tag. This is used to display
+      full sentences of information on a web page.
     -->
     <p>look around my first website!</p>
     <p>enjoy!</p>
     </header>
-    <div style="background-color: pink;">
-      <!--
-      The img tag is an inline element
-      since there is no margin before
-      the image
-      -->
-    <img src="Logo.png" alt="Inter Miami Logo" width="450" height="250" style="right: 500px;">
-    <h1 style="font-style: italic;">A demo site to learn HTML!</h1>
+    <div style="background-color: pink; border-radius: 5px; border: 5px;">
+       <h1 style="font-style: italic;">A demo site to learn HTML!</h1>
+      <!-- 
+      h2 is the second level of heading and is what is used
+      for the first subheading of a web page.
+
+      It creates a title for a subsection of a web page.
+    -->
     <h2>this site has an anchor, image, and headings!</h2>
     <br>
+    <!-- h3 is the second level of subheading in a web page. -->
     <h3>Comments will be in the code!</h3>
+    <!-- h4 is the third level of subheading. -->
     <h4>Comments act as notes!</h4>
+    <!-- 
+      br is short for break or break line. It allows developers 
+      to put extra lines of whitespace between their elements.
+    -->
     <br>
     <h5>This is a h5 tag!</h5>
     <h6>This is a h6 tag!</h6>
-    <br>
+    </br>
     </div>
-    <h1 style="font-style: italic; background-color: pink;"> List of things I like</h1>
-    <iframe src="http://pt.jikos.cz/garfield/1978/" height="179px" width="600px" style="right: 500px;"></iframe>
-    <a href="https://www.intermiamicf.com/" style="background-color: pink; color: black; font-style: italic;"> This is a link to the official Inter Miami CF Website!</a>  
+    <br>
+    <div style="background-color: pink; border-radius: 5px; border-color: black; border: 5px;">
+    <h1 style="font-style: italic;"> List of things I like</h1>
+    </div>
+    </br>
+      <!--
+      iframe tags let developers display content from other
+      websites in their own website.
+
+      Necessary attributes include:
+        src, which states the address of the web page the
+          developer wants to display in the iframe.
+        title, which describes the iframe's content to
+          people with vision difficulties. Same rules apply
+          to this attribute as img's alt attribute.
+      Important attributes include:
+        width: horizontal size of the iframe.
+        height: vertical size of the iframe.
+        
+      NOTE: If you do not want a border around your iframe,
+      use style="border: 0;"
+    -->
+    <iframe width="695" height="475" src="https://www.youtube.com/embed/AhNtpS-_DTo" style="background-color: pink;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>Your browser does not support iframe content</iframe>
+    <!-- 
+      a is short for anchor. It allows us to create links
+      between web pages in our own website, links to external
+      websites, links to email addresses, or links to telephone
+      numbers.
+      
+      Necessary attributes include:
+        href, which is the hyperlink reference or link that you
+        are trying to create.
+      Useful attributes include:
+        target, which lets you set where in the web browser the
+        link should be opened. E.g., _blank opens the link in a
+        new tab.
+    -->
+    <h1><a href="https://www.intermiamicf.com/" style="background-color: pink; color: black; font-style: italic;">This is a link to the official Inter Miami CF Website!</a></h1>
   </body>
 </html>

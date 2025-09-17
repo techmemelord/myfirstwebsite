@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images and iFrames</title>
+  </head>
+  <body>
+    <h1 style="font-style: italic">
+      This is a website for images and iframes!
+    </h1>
+    <div style="background-color: pink">
+    <h1>Here's some Images</h1>
+      <!-- 
+      The img tag displays images on a web page.
+      
+      Necessary attributes include:
+        src, which states where the image can be found.
+        alt, which gives descriptive text about the image itself.
+          The goal with alt is to give enough description for a
+          person with vision difficulties, but do not be overly
+          descriptive.
+      Useful attributes include:
+        width: Lets you set the horizontal size of the image.
+        height: Lets you set the vertical size of the image.
+    -->
+      <img
+        src="Images/Logo.png"
+        alt="Inter Miami Logo"
+        width="450"
+        height="250"
+        style="right: 500px"
+      />
+      <img
+        src="Images/cursed.jpg"
+        alt="Inter Miami Logo"
+        width="419.4"
+        height="233"
+        style="right: 250px"
+      />
+    </div>
+    <br />
+    <div style="background-color: pink">
+      <h1>some iframes:</h1>
+
+      <!--
+      iframe tags let developers display content from other
+      websites in their own website.
+
+      Necessary attributes include:
+        src, which states the address of the web page the
+          developer wants to display in the iframe.
+        title, which describes the iframe's content to
+          people with vision difficulties. Same rules apply
+          to this attribute as img's alt attribute.
+      Important attributes include:
+        width: horizontal size of the iframe.
+        height: vertical size of the iframe.
+        
+      NOTE: If you do not want a border around your iframe,
+      use style="border: 0;"
+    -->
+      <iframe
+        width="470"
+        height="250"
+        src="https://www.youtube.com/embed/AhNtpS-_DTo"
+        style="background-color: pink"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        >Your browser does not support iframe content</iframe
+      >
+      <iframe
+        width="470"
+        height="250"
+        src="https://www.youtube.com/embed/-hJdo3qsrCQ"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </body>
+</html>
