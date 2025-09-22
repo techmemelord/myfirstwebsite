@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First website - Form</title>
-</head>
-<body>
-  <h1 style="font-style: italic">My first Website</h1>
-  <h2>A Website To Practice HTML</h2>
-  <h3>HTML Forms</h3>
+  </head>
+  <body>
+    <h1 style="font-style: italic; background-color: pink">My first Website</h1>
+    <a href="index.html">Home</a>
+    <a href="images-and-iframes.html">Images and Iframes</a>
+    <a href="lists-and-tables.html">Lists and Tables</a>
+    <h2>A Website To Practice HTML</h2>
+    <h3>HTML Forms</h3>
 
-  <div style="background-color: pink;">
-
-    <P>
-      <b>
-      NOTE: This is a school project, DO NOT put any private information
-      in this form!
-      </b>
-    </P>
-    <!--
-    The form tag creats an area for user input.
+    <div style="background-color: pink">
+      <p>
+        <b>
+          NOTE: This is a school project, DO NOT put any private information in
+          this form!
+        </b>
+      </p>
+      <!--
+    The form tag creates an area for user input.
 
     Nexessary attributes include:
     method, which defines how data that is put into the form
@@ -27,12 +29,113 @@
     There are two possible values:
     get, whuch displays all input at the end of the web adress
     (NOTE: NOT GOOD FOR PRIVATE INFORMATION!!!)
-    post, which handles all input by sending tit to a back-end
+    post, which handles all input by sending it to a back-end
     program.
     -->
-    <form method="get">
-      <input type="text" id="first-name" name="fname" name="fName" required />
-    </form>
+      <form method="get">
+        <fieldset>
+          <legend>Contact information</legend>
+
+          <!--
+          The label tag is used to exlain what input is expected
+          from the input that immediately follows or is right before
+          the label.
+
+          Important attributes include:
+          for, which links to the ID of the input the label is for.
+          -->
+          <label for="first-name">First Name: </label>
+
+          <!--
+          The input tag creates the actual element that users will
+          type their information into
+          Necessary attributes include:
+          type, which states what type of input it is
+            Examples: Text, tel, password, email, button, checkbox, etc.
+          id, which gives the inout an identifiying name differetn from
+          other inputs.
+          name, which gives a variable for how to store this information
+          in the search bar or on the back end.
+          Important attributes include:
+          required, which forces a user to have to enter input in the
+          input.
+          -->
+          <input
+            type="text"
+            id="first-name"
+            name="fname"
+            name="fName"
+            required
+          />
+          <label for="middle-name">Middle Name: </label>
+          <input type="text" id="middle-name" name="mname" name="mName" />
+          <label for="last-name">Last Name: </label>
+          <input
+            type="text"
+            id="last-name"
+            name="lname"
+            name="lName"
+            required
+          />
+          <label for="Email">Email: </label>
+          <input type="email" id="Email" name="email" name="Email" required />
+          <label for="birthday">Birthday: </label>
+          <input type="date" id="birthday" name="bday" name="bDay" required />
+          <label for="Photograph">Photo: </label>
+          <input
+            type="file"
+            id="Photograph"
+            name="photo"
+            name="Photo"
+            required
+          />
+          <label for="Photograph">Favourite Colour: </label>
+          <input
+            type="color"
+            id="favourite-colour"
+            name="favcolour"
+            name="favColour"
+            required
+          />
+          <label for="City" id="City">Which city?</label>
+          <!--
+            The select element is used to create a drop-down list based on the option tags you
+            put inside the select tag.
+            Important attributes include: Required
+          -->
+          <select required>
+            <!--
+            The option element is used to create a options in a drop-down list in a select tag based on what
+            text you put inside the tag
+            Important attributes include: Value, id
+          -->
+            <option value="Winnipeg" id="Winnipeg">Winnipeg, Manitoba</option>
+            <option value="Miami" id="Miami">Miami, Florida</option>
+            <option value="Buenos Aires" id="Buenos Aires">Buenos Aires, Argentina</option>
+            <option value="Orlando" id="Orlando">Orlando, Florida</option>
+            <option value="Muncie" id="Muncie">Muncie, Indiana</option>
+            <option value="Brandon" id="Brandon">Brandon, Manitoba</option>
+            <option value="Fargo" id="Fargo">Fargo, North Dakota</option>
+            <option value="Chicago" id="Chicago">Chicago, Illnois</option>
+            <option value="Minneapolis" id="Minneapolis">Minneapolis, Minnesota</option>
+            <option value="Atlanta" id="Atlanta">Atlanta, Georgia</option>
+          </select>
+          <br>
+          <label for="Description" id="description">Brief description of yourself:</label>
+          <br>
+          <!--
+          The textarea tag is used to creat a multi-line text input control
+          that the user can type within.
+          Important attributes: required, maxlenth, name, id, cols, rows
+          -->
+          <textarea
+            id="Description"
+            name="Description"
+            required
+            maxlength="500"
+          >Tell me a bit about yourself!</textarea>
+        </fieldset>
+      </form>
     </div>
-</body>
+  </body>
 </html>
