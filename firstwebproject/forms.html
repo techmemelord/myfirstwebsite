@@ -35,6 +35,7 @@
     (NOTE: NOT GOOD FOR PRIVATE INFORMATION!!!)
     post, which handles all input by sending it to a back-end
     program.
+
     -->
       <form method="get">
         <fieldset>
@@ -81,8 +82,10 @@
             name="lName"
             required
           />
-          <label for="Email">Email: </label>
-          <input type="email" id="Email" name="email" name="Email" required />
+          <label for="Email-addr">Email (ex. user@domain.com): </label>
+          <input type="email" id="Email-addr" name="email" required />
+          <label for="PhoneNumber">Phone Number (ex. 32-354-2321-444): </label>
+          <input type="tel" id="PhoneNumber" name="PhoneNumber" name="Phonenumber" required />
           <label for="birthday">Birthday: </label>
           <input type="date" id="birthday" name="bday" name="bDay" required />
           <label for="Photograph">Photo: </label>
@@ -101,13 +104,13 @@
             name="favColour"
             required
           />
-          <label for="City" id="City">Which city?</label>
+          <label for="city">Which city?</label>
           <!--
             The select element is used to create a drop-down list based on the option tags you
             put inside the select tag.
             Important attributes include: Required
           -->
-          <select required>
+          <select id="City" name="city">
             <!--
             The option element is used to create a options in a drop-down list in a select tag based on what
             text you put inside the tag
@@ -130,13 +133,16 @@
           </select>
           <br />
           <label for="Description" id="description"
-            >Brief description of yourself:</label
+            >Tell me a bit of yourself:</label
           >
           <br />
           <!--
-          The textarea tag is used to creat a multi-line text input control
-          that the user can type within.
-          Important attributes: required, maxlenth, name, id, cols, rows
+          The textarea creates a larger text box for users to input
+          larger amounts of text.
+          Important attributes include:
+          rows, which defines how many lines of text are visible at once.
+          cols, which defines how wide the text box is.
+          maxlength, which defines the maximum number of characters
           -->
           <textarea
             id="Description"
@@ -144,9 +150,23 @@
             required
             maxlength="500"
           >
-Tell me a bit about yourself!</textarea
+          </textarea
           >
         </fieldset>
+        <input type="submit" value="submit" />submit</input>
+        <br>
+        <br>
+        <br>
+        <!--
+        The input tag with a type of button creates a button
+        that users can click to submit their form.
+        Necessary attributes include:
+        type, which defines what type of input it is.
+        value, which defines what text displays on the button.
+        -->
+
+        <input type="reset" value="reset" />reset</input>
+
       </form>
     </div>
   </body>
