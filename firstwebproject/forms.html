@@ -131,10 +131,9 @@
             </option>
             <option value="Atlanta" id="Atlanta">Atlanta, Georgia</option>
           </select>
+          <label for="PersonPassword">Enter your password here:</label>
+          <input type="password" value="UserPassword" id="PersonPassword" required/></input>
           <br />
-          <label for="Description" id="description"
-            >Tell me a bit of yourself:</label
-          >
           <br />
           <!--
           The textarea creates a larger text box for users to input
@@ -144,16 +143,47 @@
           cols, which defines how wide the text box is.
           maxlength, which defines the maximum number of characters
           -->
-          <textarea
+          <label for="skill-test">Math Question: What is the square root of 324?</label>
+          <input type="number" id="skill-test" name="skill-test" required/>
+          </fieldset>
+          <fieldset>
+          <legend>How many years of work experience do you have in this work field?</legend>
+          <label for="0-1 years">0-1 years</label>
+          <input type="radio" id="0-1 years" name="experience" required />
+          <br>
+          <label for="2-3 years">2-3 years</label>
+          <input type="radio" id="2-3 years" name="experience" required />
+          <br>
+          <label for="4-5 years">4-5 years</label>
+          <input type="radio" id="4-5 years" name="experience" required />
+          <br>
+          <label for="5+ years">5+ years</label>
+          <input type="radio" id="5+ years" name="experience" required />
+        </fieldset>
+        <fieldset>
+        <legend>Describe yourself in a few words:</legend>
+        500 characters max.
+        <textarea
             id="Description"
             name="Description"
             required
             maxlength="500"
           >
-          </textarea
-          >
-        </fieldset>
-        <input type="submit" value="submit" />submit</input>
+      </textarea>
+      <br>
+      </fieldset>
+      <fieldset>
+        <legend>Your agreements for this company:</legend>
+        <br>
+        <label for="agreement">Do you agree with our Terms of Service?</label>
+        <input type="checkbox" id="agreement" name="tos agreement" required/>
+        <br>
+        <label for="cookie agreement">Do you want to accept cookies?</label>
+        <input type="checkbox" id="cookie agreement" name="cookies agreement"/>
+      </fieldset>
+        <br>
+        <br>
+        <input type="submit" value="submit" /></input>
         <br>
         <br>
         <br>
@@ -165,7 +195,7 @@
         value, which defines what text displays on the button.
         -->
 
-        <input type="reset" value="reset" />reset</input>
+        <input type="reset" value="reset" /></input>
 
       </form>
     </div>
