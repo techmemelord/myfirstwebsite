@@ -43,20 +43,34 @@
       This is a paragraph tag. This is used to display
       full sentences of information on a web page.
     -->
-    <p>look around my first website!</p>
-    <p>enjoy!</p>
-    </header>
-    <div style="background-color: pink; border-radius: 5px; border: 5px;">
+    <nav>
+      <ul>
+        <li>
+      <a href="index.html">Home</a>
+      </li>
+        <li>
       <a href="images-and-iframes.html">Images and Iframes</a>
+      </li>
+      <li>
       <a href="lists-and-tables.html">Lists and Tables</a>
+      </li>
+      <li>
       <a href="forms.html">Forms</a>
-      <h1 style="font-style: italic;">A demo site to learn HTML!</h1>
+      </li>
+    </ul>
+    </nav>
+    <h1>My First Website</h1>
       <!-- 
       h2 is the second level of heading and is what is used
       for the first subheading of a web page.
 
       It creates a title for a subsection of a web page.
     -->
+    <h2 style="font-style: italic;">A demo site to learn HTML!</h2>
+  </header>
+  
+  <main>
+    <br>
     <h2>this site has an anchor, image, and headings!</h2>
     <br>
     <!-- h3 is the second level of subheading in a web page. -->
@@ -77,24 +91,6 @@
     <h1 style="font-style: italic;"> Something below</h1>
     </div>
     </br>
-      <!--
-      iframe tags let developers display content from other
-      websites in their own website.
-
-      Necessary attributes include:
-        src, which states the address of the web page the
-          developer wants to display in the iframe.
-        title, which describes the iframe's content to
-          people with vision difficulties. Same rules apply
-          to this attribute as img's alt attribute.
-      Important attributes include:
-        width: horizontal size of the iframe.
-        height: vertical size of the iframe.
-        
-      NOTE: If you do not want a border around your iframe,
-      use style="border: 0;"
-    -->
-    <iframe width="695" height="475" src="https://www.youtube.com/embed/AhNtpS-_DTo" style="background-color: pink;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>Your browser does not support iframe content</iframe>
     <!-- 
       a is short for anchor. It allows us to create links
       between web pages in our own website, links to external
@@ -109,8 +105,23 @@
         link should be opened. E.g., _blank opens the link in a
         new tab.
     -->
+        <section style="background-color: pink; border-radius: 5px;">
     <h1><a href="https://www.intermiamicf.com/" style="background-color: pink; color: black;">This is a link to the official <i>Inter Miami CF</i> Website!</a></h1>
+    <!--
+      This will open the default email client on the device
+    -->
+    <a href="mailto:somerandomassperson@domain.com" style="background-color: pink; color: black;"><h2>This is a link to email someone!</h2></a>
+    <br>
+    <!--
+      This will open the default telephone client on the device
+    -->
+    <a href="tel:123-456-7890" style="background-color: pink; color: black;"><h3>This is a link to call someone!</h3></a>
+        </section>
+     <footer>  
     <h2>2<sup><b>2</b></sup> = <s>3</s> 4 </h2>
     <h3>this<sub>is<sub>a<sub>subscript</sub></sub></sub></h3>
+    </footer> 
+  </main>
+
   </body>
 </html>
